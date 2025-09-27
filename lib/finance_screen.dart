@@ -25,6 +25,40 @@ class _FinanceScreenState extends State<FinanceScreen> {
             ),
           ),
         ),
+        Positioned(
+          bottom: 20,
+          child: SizedBox(
+            width: MediaQuery.of(context).size.width,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  onPressed: widget.goHome,
+                  icon: Icon(Icons.restaurant),
+                  style: IconButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Color.fromARGB(255, 102, 175, 162),
+                  ),
+                  iconSize: 30,
+                  constraints: BoxConstraints(minHeight: 80, minWidth: 120),
+                  padding: EdgeInsets.zero,
+                ),
+
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.attach_money_rounded),
+                  iconSize: 35,
+                  style: IconButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: Color.fromARGB(255, 102, 175, 162),
+                  ),
+                  constraints: BoxConstraints(minHeight: 80, minWidth: 120),
+                  padding: EdgeInsets.zero,
+                ),
+              ],
+            ),
+          ),
+        ),
         Center(
           child: Column(
             children: [
@@ -73,8 +107,14 @@ class _FinanceScreenState extends State<FinanceScreen> {
                 "Insights",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800),
               ),
-              Text("\$ Saved last month: \$72.12"),
-              Text("\$ Saved per month avg: \$35.67"),
+              Text(
+                "\$ Saved last month: \$72.12",
+                style: TextStyle(color: Color.fromARGB(255, 102, 175, 162)),
+              ),
+              Text(
+                "\$ Saved per month avg: \$35.67",
+                style: TextStyle(color: Color.fromARGB(255, 102, 175, 162)),
+              ),
             ],
           ),
         ),

@@ -40,6 +40,40 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: Icon(Icons.account_circle_sharp),
             ),
           ),
+          Positioned(
+            bottom: 20,
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.restaurant),
+                    style: IconButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: Color.fromARGB(255, 102, 175, 162),
+                    ),
+                    iconSize: 30,
+                    constraints: BoxConstraints(minHeight: 80, minWidth: 120),
+                    padding: EdgeInsets.zero,
+                  ),
+
+                  IconButton(
+                    onPressed: widget.goToFinance,
+                    icon: Icon(Icons.attach_money_rounded),
+                    iconSize: 35,
+                    style: IconButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: Color.fromARGB(255, 102, 175, 162),
+                    ),
+                    constraints: BoxConstraints(minHeight: 80, minWidth: 120),
+                    padding: EdgeInsets.zero,
+                  ),
+                ],
+              ),
+            ),
+          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -50,6 +84,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
               //------------Weekly budget used-------------
               Row(
@@ -119,13 +156,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: favMeals.length,
+                        itemCount: avialableMeals.length,
                         itemBuilder: (BuildContext context, index) {
                           return MealCardNew(
-                            mealData: favMeals[index],
+                            mealData: avialableMeals[index],
                             viewDetails: widget.viewDetails,
-                            imagePath: favMeals[index].imagePath,
-                            mealName: favMeals[index].name,
+                            imagePath: avialableMeals[index].imagePath,
+                            mealName: avialableMeals[index].name,
                           );
                         },
                       ),
@@ -149,13 +186,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: favMeals.length,
+                        itemCount: avialableMeals.length,
                         itemBuilder: (BuildContext context, index) {
                           return MealCardNew(
-                            mealData: favMeals[index],
+                            mealData: avialableMeals[index],
                             viewDetails: widget.viewDetails,
-                            imagePath: favMeals[index].imagePath,
-                            mealName: favMeals[index].name,
+                            imagePath: avialableMeals[index].imagePath,
+                            mealName: avialableMeals[index].name,
                           );
                         },
                       ),
@@ -178,13 +215,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: favMeals.length,
+                        itemCount: avialableMeals.length,
                         itemBuilder: (BuildContext context, index) {
                           return MealCardNew(
-                            mealData: favMeals[index],
+                            mealData: avialableMeals[index],
                             viewDetails: widget.viewDetails,
-                            imagePath: favMeals[index].imagePath,
-                            mealName: favMeals[index].name,
+                            imagePath: avialableMeals[index].imagePath,
+                            mealName: avialableMeals[index].name,
                           );
                         },
                       ),
@@ -194,38 +231,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               SizedBox(
                 height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.restaurant),
-                    style: IconButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      backgroundColor: Color.fromARGB(255, 102, 175, 162),
-                    ),
-                    iconSize: 30,
-                    constraints: BoxConstraints(minHeight: 80, minWidth: 120),
-                    padding: EdgeInsets.zero,
-                  ),
-                  Container(
-                    color: Colors.black,
-                    width: 1,
-                    height: 80,
-                  ),
-                  IconButton(
-                    onPressed: widget.goToFinance,
-                    icon: Icon(Icons.attach_money_rounded),
-                    iconSize: 35,
-                    style: IconButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      backgroundColor: Color.fromARGB(255, 102, 175, 162),
-                    ),
-                    constraints: BoxConstraints(minHeight: 80, minWidth: 120),
-                    padding: EdgeInsets.zero,
-                  ),
-                ],
               ),
             ],
           ),

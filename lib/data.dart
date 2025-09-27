@@ -4,7 +4,10 @@ class Meal {
   Meal(this.name, this.imagePath);
 }
 
-List<Meal> favMeals = [
+int weeklyBudget = 0;
+int currentCartPrice = 0;
+
+List<Meal> avialableMeals = [
   Meal("Meat and Rice", "meat-and-rice.jpg"),
   Meal("Test", "meat-and-rice.jpg"),
   Meal("Test", "meat-and-rice.jpg"),
