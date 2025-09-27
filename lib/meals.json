@@ -1,11 +1,10 @@
 [
-
   {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -15,12 +14,12 @@
       "sugar": 10
     }
   },
-   {
+  {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -30,12 +29,12 @@
       "sugar": 10
     }
   },
-   {
+  {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -45,12 +44,12 @@
       "sugar": 10
     }
   },
-   {
+  {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -60,12 +59,12 @@
       "sugar": 10
     }
   },
-   {
+  {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -75,12 +74,12 @@
       "sugar": 10
     }
   },
-   {
+  {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -90,12 +89,12 @@
       "sugar": 10
     }
   },
-   {
+  {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -105,12 +104,12 @@
       "sugar": 10
     }
   },
-   {
+  {
     "name": "Vegetarian Meal 2",
     "image": "assets/images/veg1.jpg",
     "description": "THE DESCRIPTION",
     "tags": "disgusting",
-    "price":12.99,
+    "price": 12.99,
     "ingredients": ["Mushrooms", "Spinach", "Pasta"],
     "nutrients": {
       "calories": 350,
@@ -119,7 +118,5 @@
       "fats": 10,
       "sugar": 10
     }
-  },
-  
-
+  }
 ]

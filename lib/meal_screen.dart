@@ -38,6 +38,20 @@ class _MealScreenState extends State<MealScreen> {
                 width: 350,
                 child: Card(
                   color: Color.fromARGB(255, 102, 175, 162),
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 20,
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadiusGeometry.circular(10),
+                        child: Image.asset(
+                          'data/images/${widget.mealData.imagePath}',
+                          width: 300,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

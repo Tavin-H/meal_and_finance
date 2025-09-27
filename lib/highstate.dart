@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_finance/finance_screen.dart';
 import 'package:meal_finance/home_screen.dart';
 import 'package:meal_finance/data.dart';
 import 'package:meal_finance/meal_screen.dart';
@@ -22,7 +23,16 @@ class _HighstateState extends State<Highstate> {
 
   void goHome() {
     setState(() {
-      activeScreen = HomeScreen(viewDetails: viewDetails);
+      activeScreen = HomeScreen(
+        viewDetails: viewDetails,
+        goToFinance: goToFinance,
+      );
+    });
+  }
+
+  void goToFinance() {
+    setState(() {
+      activeScreen = FinanceScreen(goHome: goHome);
     });
   }
 
@@ -30,7 +40,10 @@ class _HighstateState extends State<Highstate> {
   @override
   void initState() {
     setState(() {
-      activeScreen = HomeScreen(viewDetails: viewDetails);
+      activeScreen = HomeScreen(
+        viewDetails: viewDetails,
+        goToFinance: goToFinance,
+      );
     });
     super.initState();
   }

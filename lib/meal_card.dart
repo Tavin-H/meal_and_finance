@@ -19,7 +19,7 @@ class MealCard extends StatelessWidget {
     //FAVOURITE COLOR Color.fromARGB(255, 86, 144, 133)
     return SizedBox(
       height: 100,
-      width: 350,
+      width: 100,
       child: Card(
         color: Color.fromARGB(255, 102, 175, 162),
         elevation: 0,
