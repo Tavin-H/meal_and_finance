@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_finance/data.dart';
 
 class FinanceScreen extends StatefulWidget {
   const FinanceScreen({super.key, required this.goHome});
@@ -93,7 +94,7 @@ class _FinanceScreenState extends State<FinanceScreen> {
                 color: Color.fromARGB(255, 102, 175, 162),
               ),
               Text(
-                "\$735.12 / \$1000",
+                "\$$currentCartPrice / \$$weeklyBudget",
                 style: TextStyle(
                   fontSize: 20,
                   color: Color.fromARGB(255, 102, 175, 162),
