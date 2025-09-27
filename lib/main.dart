@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_finance/highstate.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,13 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: [
-            Center(
-              child: Text('Meals'),
-            ),
-          ],
-        ),
+        body: Highstate(),
       ),
     );
   }
